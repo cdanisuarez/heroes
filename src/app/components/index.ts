@@ -3,3 +3,4 @@ export { AboutComponent } from './about/about.component';
 export { HeroesComponent } from './heroes/heroes.component';
 export { HeroComponent } from './hero/hero.component';
 export { NavbarComponent } from './shared/navbar/navbar.component';
+export { SearchComponent } from './shared/search/search.component';

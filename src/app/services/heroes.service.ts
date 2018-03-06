@@ -65,11 +65,11 @@ export class HeroesService {
     return this.heroes[index];
   }
 
-  searchHero(term: string) {
-    let heroes: Array<Hero>;
+  searchHero(term: string): Array<Hero> {
+    let heroes: Array<Hero> = [];
     term = term.toLowerCase();
     for (let hero of this.heroes) {
-      let name = hero.name;
+      let name = hero.name.toLowerCase();
       if (name.indexOf(term) >= 0) {
         heroes.push(hero);
       }

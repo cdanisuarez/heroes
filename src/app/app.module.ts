@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes';
 /*Components*/
 import { AppComponent } from './app.component';
-import { NavbarComponent, HomeComponent, AboutComponent, HeroesComponent, HeroComponent } from './components/index';
+import { NavbarComponent, HomeComponent, AboutComponent, HeroesComponent, HeroComponent, SearchComponent } from './components/index';
 /*Services*/
 import { HeroesService } from './services/heroes.service';
 
@@ -15,7 +15,8 @@ import { HeroesService } from './services/heroes.service';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    HeroComponent
+    HeroComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

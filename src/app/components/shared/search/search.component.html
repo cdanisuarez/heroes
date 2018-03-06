@@ -1,0 +1,20 @@
+<h1>Searching: <small>"{{term}}"</small> </h1>
+<hr>
+<div class="card-columns">
+  <div class="card animated fadeIn fast" *ngFor="let hero of heroes; let i = index">
+    <img class="card-img-top" [alt]="hero.name" [src]="hero.image">
+    <div class="card-body">
+      <h4 class="card-title">{{hero.name}}</h4>
+      <p class="card-text">{{hero.biography}}</p>
+      <p class="card-text"><small class="text-muted">{{hero.apparition}}</small></p>
+    </div>
+  </div>
+</div>
+
+<div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      There are no results with the term: <i>{{term}}</i>
+    </div>
+  </div>
+</div>
